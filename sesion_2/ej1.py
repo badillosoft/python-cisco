@@ -34,7 +34,7 @@ def generar_nombre():
 for i in range(100):
     # Generamos un nombre aleatorio (completo)
     nombre = generar_nombre()
-    # Guardamos el nombre generado en la lista
+    # Guardamos el nombre generado en la lista nombres_gen
     nombres_gen.append(nombre)
 
 print nombres_gen
