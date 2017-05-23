@@ -14,14 +14,9 @@ import random
 def generar_nombre():
     # PASO 1: Obtener nombre y apellido aleatoriamente
 
-    # Seleccionamos un índice aleatorio para la lista de nombres
-    n = random.randint(0, len(nombres) - 1)
-    # Seleccionamos un índice aleatorio para la lista de apellidos
-    a = random.randint(0, len(apellidos) - 1)
-
     # Recuperamos los valores de la lista en el índice especificado
-    nombre = nombres[n]
-    apellido = apellidos[a]
+    nombre = random.choice(nombres)
+    apellido = random.choice(apellidos)
 
     # Damos el formato adecuado
     #nombre_completo = nombre + " " + apellido
