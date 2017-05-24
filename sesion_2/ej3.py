@@ -40,7 +40,9 @@ Z = bv[2::3]
 
 # Invertir una palabra
 
-print "Hola"[::-1]
+print "Hola\n"[-2::-1]
+
+# fi.write(linea[-2::-1] + "\n")
 
 # 1. Abrir el archivo palabras.txt (f)
 # 2. Abrir el archivo ipalabras.txt (fi)
