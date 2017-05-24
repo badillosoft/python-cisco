@@ -5,6 +5,8 @@ import json
 app = Flask(__name__)
 
 # Test: http://localhost:5000/suma?a=12
+# Test: http://localhost:5000/suma?a=12&b=12
+# Test: http://localhost:5000/suma?b=12
 @app.route("/suma")
 def suma():
      a = int(request.args.get("a", 0))
