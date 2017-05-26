@@ -1,6 +1,7 @@
 # _*_ coding: utf-8 _*_
 
 from pymongo import MongoClient
+import pymongo
 
 client = MongoClient()
 
@@ -16,7 +17,11 @@ cursor = personas.find({
     ]
 })
 
-print  "Coincidencias:", cursor.count()
+cursor.sort([
+    ("edad", pymongo.DESCENDING),
+    ("apellido", pymongo.DESCENDING),
+    ("nombre", pymongo.ASCENDING),
+])
 
 for persona in cursor:
     print "%s %s (%d)" % (
