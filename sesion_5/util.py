@@ -65,7 +65,8 @@ def random_persona():
                 random.uniform(0, 90),
                 random.uniform(-180, 180)
             ]
-        }
+        },
+        "colores": ["rojo", "azul"]
     }
 
     return persona
