@@ -1,0 +1,10 @@
+perro
+gato
+flor
+otro
+mas
+next
+while
+nose
+asi
+asa
